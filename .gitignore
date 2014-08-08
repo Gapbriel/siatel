@@ -4,6 +4,7 @@ test/temp
 .sass-cache
 .tmp
 app/vendor
+vendor
 
 # Common tmp files extensions
 lib-cov
