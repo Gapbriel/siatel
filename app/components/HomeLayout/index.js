@@ -5,16 +5,8 @@ define(function(require) {
     template = require('text!./index.html');
 
   var View = Marionette.ItemView.extend({
-
     template:template,
-    className:'homeLayout',
-
-      onShow: function(){
-       $('.carousel').carousel({
-        interval: 5000 //changes the speed
-      });
-    },
-
+    className:'homeLayout'
   });
 
   return View;

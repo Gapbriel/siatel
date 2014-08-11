@@ -3,11 +3,8 @@ define(function(require) {
   var Marionette = require('marionette'),
 
    // HomeView = require('components/HomeLayout/index'),
-    contents = require('conf/contents'),
 
     Article = require('components/ArticleContent/index'),
-
-    Jqueryiu = require('jqueryUi'),
 
     ContactUsView = require('components/contactUsLayout/index'),
 
@@ -19,13 +16,13 @@ define(function(require) {
 
     IndControl = require('components/industrialControlLayout/index'),
 
-    cargadorBaView =  require('components/BatteryChargerLayout/index'),
+    CargadorBaView =  require('components/BatteryChargerLayout/index'),
 
-    contadorPrgmView = require('components/programCounterLayout/index'),
+    ContadorPrgmView = require('components/programCounterLayout/index'),
 
-    emuladorRtdView = require('components/emuladorRtdLayout/index'),
+    EmuladorRtdView = require('components/emuladorRtdLayout/index'),
 
-    interfasesIndView = require('components/interfasesIndLayout/index'),
+    InterfasesIndView = require('components/interfasesIndLayout/index'),
 
     EnergiasView = require('components/EnergiasLayout/index'),
 
@@ -33,7 +30,7 @@ define(function(require) {
 
     InstrumentalView = require('components/Instrumental/index'),
 
-    DelsatView = require('components/DelsatLayout/index')
+    DelsatView = require('components/DelsatLayout/index');
 
   var Controller = Marionette.Controller.extend({
 
@@ -60,19 +57,19 @@ define(function(require) {
     },
 
     cargadorBateria : function() {
-      this.appRegions.layoutRight.show(new cargadorBaView());
+      this.appRegions.layoutRight.show(new CargadorBaView());
     },
 
     contadorPrograma : function() {
-      this.appRegions.layoutRight.show(new contadorPrgmView());
+      this.appRegions.layoutRight.show(new ContadorPrgmView());
     },
 
     emuladorRtd : function() {
-      this.appRegions.layoutRight.show(new emuladorRtdView());
+      this.appRegions.layoutRight.show(new EmuladorRtdView());
     },
 
     interfasesInd: function() {
-      this.appRegions.layoutRight.show(new interfasesIndView());
+      this.appRegions.layoutRight.show(new InterfasesIndView());
     },
 
     especializacion : function () {

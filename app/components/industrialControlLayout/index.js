@@ -16,7 +16,6 @@ define(function(require) {
     },
 
     serializeData: function() {
-      var self = this;
       var component = this.contents.industrial_Control[this.options.industrial_Control_component];
       return {
         title:component['title'] ,
@@ -25,17 +24,8 @@ define(function(require) {
         footerTitle:component['footerTitle'] ,
         footerContent:component['footerContent'],
         pdfButton:component['pdfButton']
-        // title:this.options.medidorUv.title ,
-        // panelBody:this.options.medidorUv.panelBody ,
-        // imageUrl:this.options.medidorUv.imageUrl ,
-        // footerTitle:this.options.medidorUv.footerTitle ,
-        // footerContent:this.options.medidorUv.footerContent,
-        // pdfButton:this.options.medidorUv.pdfButton
       };
-    },
-
-
-
+    }
   });
 
   return View;

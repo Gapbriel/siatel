@@ -11,9 +11,9 @@ define(function(require) {
     template:Template,
     className:'interfasesindlayout industrialcontrollayout container',
 
-     onShow: function(){
+    onShow: function(){
       this.$el.effect( "slide", "slow" );
-    },
+    }
 
   });
 
