@@ -1,4 +1,55 @@
 .delsatlayout {
   // always work using width: 100%;
   // .row-fluid;
+
+  .logo_delsat:before{
+    content:url("@{imagesRootPath}/delsat/logo_delsat.jpg");
+  }
+
+  .img8016{
+   /* content:url("@{imagesRootPath}/delsat/8016.jpg");*/
+    background: url("@{imagesRootPath}/delsat/8016.jpg") no-repeat;
+  }
+
+  .img8002{
+    background: url("@{imagesRootPath}/delsat/8002.jpg")no-repeat ;
+  }
+
+  .imgCT80020021{
+    background:url("@{imagesRootPath}/delsat/CT80020021.png")no-repeat;
+  }
+
+  .imgVisor{
+    background:url("@{imagesRootPath}/delsat/visor.jpg")no-repeat;
+  }
+
+  .img8016,
+  .img8002,
+  .imgCT80020021,
+  .imgVisor{
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 40%;
+    padding: 25%;
+    background-size: 100%;
+  }
+
+
+
+  .terminalImg{
+    background:url("@{imagesRootPath}/delsat/terminal.jpg") no-repeat;
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 70%;
+    padding: 16%;
+    background-size: 100%;
+  }
+
+  .container-image,
+  .thumbnail{
+    text-align: center;
+  }
+
 }

@@ -2,13 +2,11 @@ define(function(require) {
   'use strict';
   var Marionette = require('marionette'),
 
-   // HomeView = require('components/HomeLayout/index'),
-
     Article = require('components/ArticleContent/index'),
 
     ContactUsView = require('components/contactUsLayout/index'),
 
-   // LandingView = require('components/HeaderLayout/index');
+    ClientsView = require('components/ClientsLayout/index'),
 
     RadioPageView = require('components/RadioPageLayout/index'),
 
@@ -30,12 +28,18 @@ define(function(require) {
 
     InstrumentalView = require('components/Instrumental/index'),
 
+    HomeView = require('components/HomeLayout/index'),
+
     DelsatView = require('components/DelsatLayout/index');
 
   var Controller = Marionette.Controller.extend({
 
     initialize: function(app){
       this.appRegions = app._regionManager._regions;
+    },
+
+    home: function () {
+      this.appRegions.layoutRight.show(new HomeView());
     },
 
     repetidoresInfrarojo : function() {
@@ -90,6 +94,10 @@ define(function(require) {
 
     delsat: function () {
       this.appRegions.layoutRight.show(new DelsatView());
+    },
+
+    clients: function() {
+      this.appRegions.layoutRight.show(new ClientsView());
     }
 
   });

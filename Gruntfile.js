@@ -269,7 +269,7 @@ module.exports = function(grunt) {
           dest: '<%= yeoman.dist %>',
           src: [
             '*.{ico,png,txt,html}',
-            'assets/images/{,*/}*.{webp,gif}',
+            'assets/images/{,*/}*.{webp,gif,pff,pdf}',
             'assets/fonts/*'
           ]
         }]
@@ -343,7 +343,7 @@ module.exports = function(grunt) {
 
       // build js
       grunt.registerTask('build-js', [
-        'jshint',        // js validation
+        // 'jshint',        // js validation
         'useminPrepare', // prepare configuration for cssmin, concat, uglify and requirejs
         'requirejs',     // require bundling
         'concat',        // copy all the js files to dist

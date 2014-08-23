@@ -8,7 +8,7 @@
       </div>
       <div class="panel-body">
           <h4 class="h4-center"><%= panelBody %></h4>
-          <p class="container-image"><img src="<%= imageUrl %>" width="50%" height="15%" alt="Medidor UV"></p>
+          <p class="container-image"><img class="image__medidor" width="50%" height="15%"></p>
           <% if ( footerTitle || footerContent) { %>
           <div class="panel-footer">
             <h4 class="panel-footer-title"><%= footerTitle %></h4>
@@ -16,9 +16,6 @@
           </div>
           <% } %>
            <% if (pdfButton == '1') { %>
-          <!-- <button href="/assets/images/fotos/Medidor UV/medidorUv.pdf"type="button" class="btn btn-default btn-lg">
-              <span class="glyphicon glyphicon-save"></span> save
-          </button> -->
           <a href="" data-toggle="modal" data-target=".myModal" class="btn btn-lg btn-info"><span class="glyphicon glyphicon-import"></span> Info Manual medidor Indice Ultarvioleta</a>
            <% } %>
       </div>
@@ -32,7 +29,7 @@
           <h4 class="modal-title" id="myModalLabel">Manual medidor Indice Ultarvioleta</h4>
         </div>
         <div class="modal-body">
-           <iframe height:"100%" width:"100%" src="/assets/images/medidorUv/medidorUv.pdf"></iframe>
+           <iframe height:"100%" width:"100%" src="assets/images/medidor/medidorUv.pdf"></iframe>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

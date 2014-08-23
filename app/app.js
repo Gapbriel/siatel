@@ -17,6 +17,7 @@ define([
                 'repetidores': 'repetidoresInfrarojo',
                 'energias':'energias',
                 'contactUs' : 'contactUs',
+                'clients':'clients',
                 'medidorUv':'medidorUv',
                 'cargadorBateria':'cargadorBateria',
                 'contadorPrograma':'contadorPrograma',
@@ -26,7 +27,8 @@ define([
                 'radio':'radio',
                 'instrumental':'instrumental',
                 'kombi':'kombi',
-                'delsat':'delsat'
+                'delsat':'delsat',
+                'home':'home'
               }
             });
 
