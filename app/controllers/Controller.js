@@ -30,6 +30,8 @@ define(function(require) {
 
     HomeView = require('components/HomeLayout/index'),
 
+    InstrumentosSiatelView = require('components/InstrumentalSiatelLayout/index'),
+
     DelsatView = require('components/DelsatLayout/index');
 
   var Controller = Marionette.Controller.extend({
@@ -98,6 +100,10 @@ define(function(require) {
 
     clients: function() {
       this.appRegions.layoutRight.show(new ClientsView());
+    },
+
+    instrumentosSiatel: function () {
+      this.appRegions.layoutRight.show(new InstrumentosSiatelView());
     }
 
   });

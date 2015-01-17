@@ -14,6 +14,7 @@ define([
         var Router =  Marionette.AppRouter.extend({
               controller: new Controller(app),
               appRoutes: {
+                'instrumentosSiatel':'instrumentosSiatel',
                 'repetidores': 'repetidoresInfrarojo',
                 'energias':'energias',
                 'contactUs' : 'contactUs',
