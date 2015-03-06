@@ -29,7 +29,8 @@ define([
                 'instrumental':'instrumental',
                 'kombi':'kombi',
                 'delsat':'delsat',
-                'home':'home'
+                'home':'home',
+                'quienesSomos':'quienesSomos'
               }
             });
 

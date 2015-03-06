@@ -32,7 +32,9 @@ define(function(require) {
 
     InstrumentosSiatelView = require('components/InstrumentalSiatelLayout/index'),
 
-    DelsatView = require('components/DelsatLayout/index');
+    DelsatView = require('components/DelsatLayout/index'),
+
+    QuienesSomosView = require('components/quienesPageLayout/index');
 
   var Controller = Marionette.Controller.extend({
 
@@ -104,6 +106,10 @@ define(function(require) {
 
     instrumentosSiatel: function () {
       this.appRegions.layoutRight.show(new InstrumentosSiatelView());
+    },
+
+    quienesSomos: function () {
+      this.appRegions.layoutRight.show(new QuienesSomosView());
     }
 
   });
